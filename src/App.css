@@ -1,32 +1,62 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h3{
+  margin-top: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  height: 80px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+.calculadora {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 3;
 }
-
-.App-link {
-  color: #61dafb;
+.historial {
+  flex: 1;
+  background: white;
+  padding: 10px 8px;
+  margin-left: 20px;
+  text-align: left;
+  overflow-y: auto;
+  max-height: 416px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 700px;
+  display: flex;
+  background: #ddd;
+  padding: 30px 20px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inputs {
+  width: 66.6%;
+  /* background: yellow; */
+  justify-content: space-between;
+}
+.inputs * {
+  width: 33.3%;
+}
+.operadores {
+  display: flex;
+  width: 30%;
+  /* background: blue; */
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.operadores * {
+  font-size: 30px;
+}
+.display {
+  width: 100%;
+  background: white;
+  padding: 5px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px inset;
 }

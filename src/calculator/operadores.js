@@ -6,5 +6,9 @@ export const Operadores = (props) => {
   const operadores = buttons.map(b => {
     return <Button key={b} value={b} onClick={props.onClick} />
   });
-  return operadores;
+  return (
+    <div className="operadores">
+      {operadores}  
+    </div>
+  );
 };
